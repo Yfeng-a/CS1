@@ -20,7 +20,7 @@ class Chat:
 		self.text.insert(tk.END,('\t\t\t----------\n\t\t\t\t' 'Wecolme to Chat \n\t\t\t\t '
 								   'Enjoy yourself \n\t\t\t\t----------------\n\n\n'))
 		frame = tk.Frame(window)	#创建视窗容器
-		frame.pack 		#将其做用到视窗上
+		frame.pack() 		#将其做用到视窗上
 		#在容器上创建标签
 		label = tk.Label(frame,text="Enter your Message :")
 		#定义一个字符串对象
