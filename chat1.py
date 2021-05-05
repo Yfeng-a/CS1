@@ -21,9 +21,9 @@ class Chat:
 			即文本内容显示在文本区域的最后位置
 			第二个是文本内容
 		'''
-		self.text.insert(tk.END,('\t\t\t\t--------------\n\t\t\t\t' 
-								'Wecolme to Chat \n\t\t\t'
-								'Enjoy youself \n\t\t\t\t-------------\n\n\n'))
+		self.text.insert(tk.END,('\t\t\t\t--------------------\n\t\t\t\t' 
+								'Wecolme to Chat \n\t\t\t\t'
+								'Enjoy youself \n\t\t\t\t--------------------\n\n\n'))
 		self.text.insert(tk.END,"[NO PERSON] Waiting for someone\n")
 		frame = tk.Frame(window)	#创建视窗容器
 		frame.pack()	#将其作用到视窗上
