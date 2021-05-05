@@ -54,7 +54,7 @@ class Chat:
 		addr = ('localhost',11231)
 		#向服务器发送连接请求
 		self.sock.connect(addr)
-		self.text.insert(tk_END,'Linked sucess\n')
+		self.text.insert(tk.END,'Linked sucess\n')
 		#创建子线程并启动
 		thread = threading.Thread(target=self.handle)
 		thread.start()
@@ -63,7 +63,7 @@ class Chat:
 	def handle(self):
 		while True:
 			#阻塞运行，直到服务器发来消息
-			message = self.sockrecv(1024).decode()
+			message = self.sock.recv(1024).decode()
 			#将消息打印到文本区域中
 			self.text.insert(tk.END,'[Other\'s Message] {}\n'.format(message))
 
